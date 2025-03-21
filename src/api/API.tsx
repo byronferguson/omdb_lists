@@ -20,7 +20,7 @@ const searchOMDB = async (query: string): Promise<Film> => {
     return data as Film;
   } catch (err) {
     console.log('an error occurred', err);
-    return [];
+    return {} as Film;
   }
 };
 
